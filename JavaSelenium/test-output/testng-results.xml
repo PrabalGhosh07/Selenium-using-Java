@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-12T15:28:18 IST" name="Default suite" finished-at="2025-08-12T15:28:27 IST" duration-ms="9586">
+  <suite started-at="2025-08-13T16:49:04 IST" name="Default suite" finished-at="2025-08-13T16:49:19 IST" duration-ms="14417">
     <groups>
     </groups>
-    <test started-at="2025-08-12T15:28:18 IST" name="Default test" finished-at="2025-08-12T15:28:27 IST" duration-ms="9586">
-      <class name="Selenium.DemoApplication">
-        <test-method is-config="true" signature="LunchBrowser()[pri:0, instance:Selenium.DemoApplication@28261e8e]" started-at="2025-08-12T15:28:18 IST" name="LunchBrowser" finished-at="2025-08-12T15:28:20 IST" duration-ms="2333" status="PASS">
+    <test started-at="2025-08-13T16:49:04 IST" name="Default test" finished-at="2025-08-13T16:49:19 IST" duration-ms="14417">
+      <class name="Selenium.ParaBankTesting">
+        <test-method is-config="true" signature="LunchBrowser()[pri:0, instance:Selenium.ParaBankTesting@4b29d1d2]" started-at="2025-08-13T16:49:05 IST" name="LunchBrowser" finished-at="2025-08-13T16:49:09 IST" duration-ms="4368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LunchBrowser -->
-        <test-method signature="RegisterNewUser()[pri:0, instance:Selenium.DemoApplication@28261e8e]" started-at="2025-08-12T15:28:20 IST" name="RegisterNewUser" finished-at="2025-08-12T15:28:26 IST" duration-ms="5418" status="PASS">
+        <test-method signature="RegisterNewUser()[pri:0, instance:Selenium.ParaBankTesting@4b29d1d2]" started-at="2025-08-13T16:49:09 IST" name="RegisterNewUser" finished-at="2025-08-13T16:49:15 IST" duration-ms="6498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterNewUser -->
-        <test-method signature="launchGoogle()[pri:0, instance:Selenium.DemoApplication@28261e8e]" started-at="2025-08-12T15:28:26 IST" name="launchGoogle" finished-at="2025-08-12T15:28:27 IST" duration-ms="1498" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:Selenium.ParaBankTesting@4b29d1d2]" started-at="2025-08-13T16:49:15 IST" name="Login" finished-at="2025-08-13T16:49:19 IST" duration-ms="3407" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchGoogle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.DemoApplication@28261e8e]" started-at="2025-08-12T15:28:27 IST" name="tearDown" finished-at="2025-08-12T15:28:27 IST" duration-ms="259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Selenium.DemoApplication -->
+        </test-method> <!-- Login -->
+      </class> <!-- Selenium.ParaBankTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

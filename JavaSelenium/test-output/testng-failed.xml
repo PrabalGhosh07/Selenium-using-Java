@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium.DemoApplication">
+      <class name="Selenium.ParaBankTesting">
         <methods>
-          <include name="RegisterNewUser"/>
           <include name="LunchBrowser"/>
-          <include name="launchGoogle"/>
+          <include name="RegisterNewUser"/>
         </methods>
-      </class> <!-- Selenium.DemoApplication -->
+      </class> <!-- Selenium.ParaBankTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

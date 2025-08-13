@@ -1,5 +1,9 @@
 package Selenium;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -46,11 +50,11 @@ public class DemoApplication {
 			driver.get("https://www.google.com/");
 		}
 		
-		@AfterClass
-		public void tearDown() {
-			if(driver != null) {
-				driver.quit();
-			}
-		}
+//		@AfterClass
+//		public void tearDown() {
+//			if(driver != null) {
+//				driver.quit();
+//			}
+//		}
 
 }
