@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-13T16:49:04 IST" name="Default suite" finished-at="2025-08-13T16:49:19 IST" duration-ms="14417">
+  <suite started-at="2025-08-14T16:52:04 IST" name="Suite" finished-at="2025-08-14T16:52:28 IST" duration-ms="24363">
     <groups>
+      <group name="smoke">
+        <method signature="ParaBankTesting.RegisterNewUser()[pri:1, instance:Selenium.ParaBankTesting@2cb4893b]" name="RegisterNewUser" class="Selenium.ParaBankTesting"/>
+        <method signature="ParaBankTesting.Login()[pri:2, instance:Selenium.ParaBankTesting@2cb4893b]" name="Login" class="Selenium.ParaBankTesting"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-08-13T16:49:04 IST" name="Default test" finished-at="2025-08-13T16:49:19 IST" duration-ms="14417">
+    <test started-at="2025-08-14T16:52:04 IST" name="Smoke Tests" finished-at="2025-08-14T16:52:28 IST" duration-ms="24363">
       <class name="Selenium.ParaBankTesting">
-        <test-method is-config="true" signature="LunchBrowser()[pri:0, instance:Selenium.ParaBankTesting@4b29d1d2]" started-at="2025-08-13T16:49:05 IST" name="LunchBrowser" finished-at="2025-08-13T16:49:09 IST" duration-ms="4368" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:Selenium.ParaBankTesting@2cb4893b]" started-at="2025-08-14T16:52:04 IST" name="LaunchBrowser" finished-at="2025-08-14T16:52:10 IST" duration-ms="6401" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://parabank.parasoft.com/]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LunchBrowser -->
-        <test-method signature="RegisterNewUser()[pri:0, instance:Selenium.ParaBankTesting@4b29d1d2]" started-at="2025-08-13T16:49:09 IST" name="RegisterNewUser" finished-at="2025-08-13T16:49:15 IST" duration-ms="6498" status="PASS">
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="RegisterNewUser()[pri:1, instance:Selenium.ParaBankTesting@2cb4893b]" started-at="2025-08-14T16:52:10 IST" name="RegisterNewUser" finished-at="2025-08-14T16:52:16 IST" duration-ms="5825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterNewUser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:Selenium.ParaBankTesting@4b29d1d2]" started-at="2025-08-13T16:49:15 IST" name="Login" finished-at="2025-08-13T16:49:19 IST" duration-ms="3407" status="PASS">
+        <test-method signature="Login()[pri:2, instance:Selenium.ParaBankTesting@2cb4893b]" started-at="2025-08-14T16:52:16 IST" name="Login" finished-at="2025-08-14T16:52:18 IST" duration-ms="1685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Selenium.ParaBankTesting@2cb4893b]" started-at="2025-08-14T16:52:18 IST" name="afterClass" finished-at="2025-08-14T16:52:28 IST" duration-ms="10267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
       </class> <!-- Selenium.ParaBankTesting -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- Suite -->
 </testng-results>

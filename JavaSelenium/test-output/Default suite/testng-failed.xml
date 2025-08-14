@@ -5,8 +5,10 @@
     <classes>
       <class name="Selenium.ParaBankTesting">
         <methods>
-          <include name="LunchBrowser"/>
+          <include name="Login"/>
+          <include name="LaunchBrowser"/>
           <include name="RegisterNewUser"/>
+          <include name="afterClass"/>
         </methods>
       </class> <!-- Selenium.ParaBankTesting -->
     </classes>

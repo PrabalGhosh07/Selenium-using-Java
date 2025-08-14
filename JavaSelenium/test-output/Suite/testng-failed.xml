@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <parameter name="browserName" value="Chrome"/>
+  <parameter name="url" value="https://parabank.parasoft.com/"/>
+  <test thread-count="5" name="Smoke Tests(failed)">
     <classes>
-      <class name="Selenium.Annotations">
+      <class name="Selenium.ParaBankTesting">
         <methods>
-          <include name="AfterMethod"/>
-          <include name="VerifyPage"/>
-          <include name="BeforeClass"/>
-          <include name="BeforTest"/>
-          <include name="AfterSuit"/>
-          <include name="BeforeSuit"/>
-          <include name="BeforeMethod"/>
-          <include name="AfterTest"/>
-          <include name="LoginTest"/>
-        </methods>
-      </class> <!-- Selenium.Annotations -->
-      <class name="Selenium.DemoApplication">
-        <methods>
+          <include name="LaunchBrowser"/>
           <include name="RegisterNewUser"/>
-          <include name="LunchBrowser"/>
-          <include name="launchGoogle"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- Selenium.DemoApplication -->
+      </class> <!-- Selenium.ParaBankTesting -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Smoke Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->
