@@ -4,11 +4,17 @@
   <parameter name="browserName" value="Chrome"/>
   <parameter name="url" value="https://parabank.parasoft.com/"/>
   <test thread-count="5" name="Smoke Tests(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+      </run>
+    </groups>
     <classes>
       <class name="Selenium.ParaBankTesting">
         <methods>
+          <include name="Login" invocation-numbers="0"/>
           <include name="LaunchBrowser"/>
-          <include name="RegisterNewUser"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- Selenium.ParaBankTesting -->

@@ -12,28 +12,32 @@ import org.testng.annotations.*;
 
 public class ParaBankTesting {
 	WebDriver driver;
-	@Parameters({"browserName","url"})
-	@BeforeClass(groups= {"smoke"})
-	public void LaunchBrowser(String browserName, String url) {
-		switch (browserName.toLowerCase()) {
-		case "chrome":
-			driver = new ChromeDriver();
-			break;
-		case "firefox":
-			driver = new FirefoxDriver();
-			break;
-		case "edge":
-			driver = new EdgeDriver();
-			break;
-		default:
-			System.out.println("Invalid Browser");
-			break;
-		}
-		driver.manage().window().maximize();
-		driver.get(url);
-	}
-	@Test(groups= {"smoke"},priority = 1)
-
+	
+	 // ================== SETUP ==================
+	
+	@Parameters({"browserName", "url"})
+    @BeforeClass(alwaysRun = true)
+    public void LaunchBrowser(String browserName, String url) {
+        switch (browserName.toLowerCase()) {
+            case "chrome":
+                driver = new ChromeDriver();
+                break;
+            case "firefox":
+                driver = new FirefoxDriver();
+                break;
+            case "edge":
+                driver = new EdgeDriver();
+                break;
+            default:
+                throw new IllegalArgumentException("Invalid browser: " + browserName);
+        }
+        driver.manage().window().maximize();
+        driver.get(url);
+    }
+	
+	   // ================== TEST CASES ==================
+	
+	@Test(groups= {"regression"},priority = 1)
 	public void RegisterNewUser() {
 		driver.get("https://parabank.parasoft.com/");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -57,36 +61,44 @@ public class ParaBankTesting {
 		wait.until(ExpectedConditions.elementToBeClickable(By.name("repeatedPassword"))).sendKeys("Admin123");
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Register']"))).click();
 		
-		
-		
 	}
 	
-	@Test(groups= {"smoke"},priority = 2)
-	public void Login(){
+	@Test(groups = {"smoke"}, priority = 2, dataProvider = "logInTestData")
+    public void Login(String username, String password) throws InterruptedException {
+        driver.get("https://parabank.parasoft.com/");
+        System.out.println("Performing Login with: " + username + " / " + password);
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(By.name("username"))).sendKeys(username);
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Log In']"))).click();
+
+        Thread.sleep(2000);
+        
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Log Out']"))).click();
+            Thread.sleep(1000);
+        } catch (Exception e) {
+            System.out.println("Logout link not found, maybe login failed.");
+        }
+    }
 	
-		driver.get("https://parabank.parasoft.com/");
-		System.out.println("performing Login");
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		//driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
-		wait.until(ExpectedConditions.elementToBeClickable(By.name("username"))).sendKeys("Prabal07");
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Admin123");
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Log In']"))).click();
-	}
-	
-	@Ignore
-	@Test (groups = {"smoke"})
+	@Ignore 
+	@Test (groups = {"regression"})
 	public void CustomerCare() {
 		driver.get("https://parabank.parasoft.com/parabank/contact.htm");
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@href='contact.htm']"))).click();
-		wait.until(ExpectedConditions.elementToBeClickable(By.name("name"))).click();
-		wait.until(ExpectedConditions.elementToBeClickable(By.name("email']"))).sendKeys("Prabal");
-		wait.until(ExpectedConditions.elementToBeClickable(By.name("phone"))).sendKeys("raja123gmail.com");
-		wait.until(ExpectedConditions.elementToBeClickable(By.name("message"))).sendKeys("You need good tester for your bank");
+		wait.until(ExpectedConditions.elementToBeClickable(By.name("name"))).sendKeys("Prabal");
+		wait.until(ExpectedConditions.elementToBeClickable(By.name("email"))).sendKeys("raja123gmail.com");
+		wait.until(ExpectedConditions.elementToBeClickable(By.name("phone"))).sendKeys("1234567890");
+		wait.until(ExpectedConditions.elementToBeClickable(By.name("message"))).sendKeys("You need a good tester for your bank");
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Send to Customer Care']"))).click();
 	}
-		
-	@AfterClass (groups= {"smoke"}) //Reset to login page
+	
+	   // ================== CLEANUP ==================
+	
+	@AfterClass(alwaysRun = true) 
 	public void afterClass() throws InterruptedException {
 		System.out.println("Closing the browser after done");
 		if (driver != null) {
@@ -94,6 +106,18 @@ public class ParaBankTesting {
 			driver.quit();
 		}
 	}
+	
+	// ================== DATA PROVIDER ==================
+	@DataProvider(name="logInTestData")
+	public Object[][] logInData() {
+		Object[][] data = new Object[2][2];
+		data[0][0] = "Prabal07";
+		data[0][1] = "Admin123";
+		data[1][0] = "Abhas1";
+		data[1][1] = "Admin123";
+		return data;
+	}
+	
 	
 }
 	

@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Selenium.ParaBankTesting" class="method navigator-link" hash-for-method="RegisterNewUser">RegisterNewUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Selenium.ParaBankTesting" class="method navigator-link" hash-for-method="Login(Prabal07, Admin123)">Login(Prabal07, Admin123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Selenium.ParaBankTesting" class="method navigator-link" hash-for-method="Login(Abhas1, Admin123)">Login(Abhas1, Admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -126,9 +131,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="RegisterNewUser">
-                  </a> <!-- RegisterNewUser -->
-                  <span class="method-name">RegisterNewUser</span>
+                  <a name="Login(Prabal07, Admin123)">
+                  </a> <!-- Login(Prabal07, Admin123) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(Prabal07,Admin123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(Abhas1, Admin123)">
+                  </a> <!-- Login(Abhas1, Admin123) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(Abhas1,Admin123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,6 +163,7 @@
     &lt;groups&gt;
       &lt;run&gt;
         &lt;include name=&quot;smoke&quot;/&gt;
+        &lt;exclude name=&quot;regression&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -180,7 +195,7 @@
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">RegisterNewUser</span>
+                <span class="method-in-group-name">Login</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -200,16 +215,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'RegisterNewUser')
+data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'Selenium.ParaBankTesting')
-data.setCell(0, 3, 3746);
+data.setCell(0, 3, 7909);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Login')
+data.setCell(1, 2, 'Selenium.ParaBankTesting')
+data.setCell(1, 3, 6745);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -224,13 +243,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">Selenium.ParaBankTesting</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">Login</span>
+                <span class="ignored-method-name">RegisterNewUser</span>
+                <br/>
+                <span class="ignored-method-name">CustomerCare</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -248,12 +269,16 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">RegisterNewUser</span>
-                <span class="method-start">8627 ms</span>
+                <span class="method-name">Login(Prabal07, Admin123)</span>
+                <span class="method-start">6046 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Login(Abhas1, Admin123)</span>
+                <span class="method-start">13965 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">12400 ms</span>
+                <span class="method-start">20722 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

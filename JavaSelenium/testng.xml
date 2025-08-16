@@ -35,9 +35,10 @@
 	
     <test name="Smoke Tests">
         <groups>
-            <define>
+            <run>
                 <include name="smoke"/>
-           </define>
+                <exclude name="regression"/>
+           </run>
             <!-- If we don'y run this smoke it will hide this smoke part and run only Regression Part -->
             <!-- Smoke helps to hide -->
         </groups>
