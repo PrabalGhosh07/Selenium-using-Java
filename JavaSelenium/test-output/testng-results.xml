@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="7" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-16T18:01:33 IST" name="Suite" finished-at="2025-08-16T18:02:04 IST" duration-ms="30851">
+  <suite started-at="2025-08-18T23:28:26 IST" name="Suite" finished-at="2025-08-18T23:29:23 IST" duration-ms="56890">
     <groups>
+      <group name="regression">
+        <method signature="ParaBankTesting.RegisterNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext)[pri:1, instance:Selenium.ParaBankTesting@710c2b53]" name="RegisterNewUser" class="Selenium.ParaBankTesting"/>
+      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="ParaBankTesting.Login(java.lang.String,java.lang.String)[pri:2, instance:Selenium.ParaBankTesting@5386659f]" name="Login" class="Selenium.ParaBankTesting"/>
+        <method signature="ParaBankTesting.Login(java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext)[pri:2, instance:Selenium.ParaBankTesting@710c2b53]" name="Login" class="Selenium.ParaBankTesting"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-08-16T18:01:33 IST" name="Smoke Tests" finished-at="2025-08-16T18:02:04 IST" duration-ms="30851">
+    <test started-at="2025-08-18T23:28:26 IST" name="Smoke Tests" finished-at="2025-08-18T23:29:23 IST" duration-ms="56890">
       <class name="Selenium.ParaBankTesting">
-        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:Selenium.ParaBankTesting@5386659f]" started-at="2025-08-16T18:01:33 IST" name="LaunchBrowser" finished-at="2025-08-16T18:01:39 IST" duration-ms="5975" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser(java.lang.String,java.lang.String)[pri:0, instance:Selenium.ParaBankTesting@710c2b53]" started-at="2025-08-18T23:28:26 IST" name="LaunchBrowser" finished-at="2025-08-18T23:28:33 IST" duration-ms="6564" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,7 +29,272 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:Selenium.ParaBankTesting@5386659f]" started-at="2025-08-16T18:01:39 IST" name="Login" data-provider="logInTestData" finished-at="2025-08-16T18:01:47 IST" duration-ms="7909" status="PASS">
+        <test-method signature="RegisterNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext)[pri:1, instance:Selenium.ParaBankTesting@710c2b53]" started-at="2025-08-18T23:28:34 IST" name="RegisterNewUser" data-provider="registerData" finished-at="2025-08-18T23:28:42 IST" duration-ms="8443" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mallavarapu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kandukur Street]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kandukur]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[AP]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[523105]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[SundarSai08]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[sai@123]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[public void Selenium.ParaBankTesting.RegisterNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[org.testng.TestRunner@66273da0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterNewUser -->
+        <test-method signature="RegisterNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext)[pri:1, instance:Selenium.ParaBankTesting@710c2b53]" started-at="2025-08-18T23:28:42 IST" name="RegisterNewUser" data-provider="registerData" finished-at="2025-08-18T23:28:48 IST" duration-ms="5933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Prabal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ghosh]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gurap]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kolkata]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[WB]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[712303]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9123456780]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[987654321]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[harry45]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[prabal@123]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[public void Selenium.ParaBankTesting.RegisterNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[org.testng.TestRunner@66273da0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterNewUser -->
+        <test-method signature="RegisterNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext)[pri:1, instance:Selenium.ParaBankTesting@710c2b53]" started-at="2025-08-18T23:28:48 IST" name="RegisterNewUser" data-provider="registerData" finished-at="2025-08-18T23:28:54 IST" duration-ms="5823" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abhas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mittal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Shastri Nagar]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Meerut]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[UP]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[250004.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[9.758302001E9]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1.59753462E8]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Potter54]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[abhas@123]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[public void Selenium.ParaBankTesting.RegisterNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[org.testng.TestRunner@66273da0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterNewUser -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext)[pri:2, instance:Selenium.ParaBankTesting@710c2b53]" started-at="2025-08-18T23:28:54 IST" name="Login" data-provider="logInTestData" finished-at="2025-08-18T23:28:59 IST" duration-ms="4500" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SaiSundar10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sai@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@66273da0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed for user: SaiSundar10 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed for user: SaiSundar10 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at Selenium.ParaBankTesting.Login(ParaBankTesting.java:122)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext)[pri:2, instance:Selenium.ParaBankTesting@710c2b53]" started-at="2025-08-18T23:28:59 IST" name="Login" data-provider="logInTestData" finished-at="2025-08-18T23:29:04 IST" duration-ms="4688" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -35,30 +303,91 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Admin123]]>
+                <![CDATA[Admin@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@66273da0]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login failed for user: Prabal07 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login failed for user: Prabal07 expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at Selenium.ParaBankTesting.Login(ParaBankTesting.java:122)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Login(java.lang.String,java.lang.String)[pri:2, instance:Selenium.ParaBankTesting@5386659f]" started-at="2025-08-16T18:01:47 IST" name="Login" data-provider="logInTestData" finished-at="2025-08-16T18:01:54 IST" duration-ms="6745" status="PASS">
+        <test-method signature="Login(java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext)[pri:2, instance:Selenium.ParaBankTesting@710c2b53]" started-at="2025-08-18T23:29:04 IST" name="Login" data-provider="logInTestData" finished-at="2025-08-18T23:29:13 IST" duration-ms="8812" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Abhas1]]>
+                <![CDATA[Potter54]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Admin123]]>
+                <![CDATA[abhas@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@66273da0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Selenium.ParaBankTesting@5386659f]" started-at="2025-08-16T18:01:54 IST" name="afterClass" finished-at="2025-08-16T18:02:04 IST" duration-ms="10041" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Selenium.ParaBankTesting@710c2b53]" started-at="2025-08-18T23:29:13 IST" name="afterClass" finished-at="2025-08-18T23:29:23 IST" duration-ms="10254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

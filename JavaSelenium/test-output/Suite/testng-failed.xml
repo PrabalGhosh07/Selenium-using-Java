@@ -3,6 +3,9 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browserName" value="Chrome"/>
   <parameter name="url" value="https://parabank.parasoft.com/"/>
+  <listeners>
+    <listener class-name="Selenium.TestListener"/>
+  </listeners>
   <test thread-count="5" name="Smoke Tests(failed)">
     <groups>
       <run>
@@ -13,7 +16,7 @@
     <classes>
       <class name="Selenium.ParaBankTesting">
         <methods>
-          <include name="Login" invocation-numbers="0"/>
+          <include name="Login" invocation-numbers="0 1"/>
           <include name="LaunchBrowser"/>
           <include name="afterClass"/>
         </methods>

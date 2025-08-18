@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Selenium.ParaBankTesting" class="method navigator-link" hash-for-method="Login(Prabal07, Admin@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,ja...)">Login(Prabal07, Admin@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,ja...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Selenium.ParaBankTesting" class="method navigator-link" hash-for-method="Login(SaiSundar10, sai@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,j...)">Login(SaiSundar10, sai@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,j...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +122,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Selenium.ParaBankTesting" class="method navigator-link" hash-for-method="Login(Prabal07, Admin123)">Login(Prabal07, Admin123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Selenium.ParaBankTesting" class="method navigator-link" hash-for-method="Login(Potter54, abhas@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,ja...)">Login(Potter54, abhas@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,ja...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Selenium.ParaBankTesting" class="method navigator-link" hash-for-method="Login(Abhas1, Admin123)">Login(Abhas1, Admin123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Selenium.ParaBankTesting" class="method navigator-link" hash-for-method="RegisterNewUser(Prabal, Ghosh, Gurap, Kolkata, WB, 712303, 9123456780, 987654321, harry45, prabal@123, public void S...)">RegisterNewUser(Prabal, Ghosh, Gurap, Kolkata, WB, 712303, 9123456780, 987654321, harry45, prabal@123, public void S...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Selenium.ParaBankTesting" class="method navigator-link" hash-for-method="RegisterNewUser(Abhas, Mittal, Shastri Nagar, Meerut, UP, 250004.0, 9.758302001E9, 1.59753462E8, Potter54, abhas@123...)">RegisterNewUser(Abhas, Mittal, Shastri Nagar, Meerut, UP, 250004.0, 9.758302001E9, 1.59753462E8, Potter54, abhas@123...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Selenium.ParaBankTesting" class="method navigator-link" hash-for-method="RegisterNewUser(Sai, Mallavarapu, Kandukur Street, Kandukur, AP, 523105, 9876543210, 123456789, SundarSai08, sai@123...)">RegisterNewUser(Sai, Mallavarapu, Kandukur Street, Kandukur, AP, 523105, 9876543210, 123456789, SundarSai08, sai@123...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -123,6 +152,40 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Selenium.ParaBankTesting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(Prabal07, Admin@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,ja...)">
+                  </a> <!-- Login(Prabal07, Admin@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,ja...) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(Prabal07,Admin@123,public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext) throws java.lang.InterruptedException,org.testng.TestRunner@66273da0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: Prabal07 expected [true] but found [false]
+	at Selenium.ParaBankTesting.Login(ParaBankTesting.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(SaiSundar10, sai@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,j...)">
+                  </a> <!-- Login(SaiSundar10, sai@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,j...) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(SaiSundar10,sai@123,public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext) throws java.lang.InterruptedException,org.testng.TestRunner@66273da0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login failed for user: SaiSundar10 expected [true] but found [false]
+	at Selenium.ParaBankTesting.Login(ParaBankTesting.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -131,18 +194,34 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login(Prabal07, Admin123)">
-                  </a> <!-- Login(Prabal07, Admin123) -->
+                  <a name="Login(Potter54, abhas@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,ja...)">
+                  </a> <!-- Login(Potter54, abhas@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,ja...) -->
                   <span class="method-name">Login</span>
-                  <span class="parameters">(Prabal07,Admin123)</span>
+                  <span class="parameters">(Potter54,abhas@123,public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext) throws java.lang.InterruptedException,org.testng.TestRunner@66273da0)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Login(Abhas1, Admin123)">
-                  </a> <!-- Login(Abhas1, Admin123) -->
-                  <span class="method-name">Login</span>
-                  <span class="parameters">(Abhas1,Admin123)</span>
+                  <a name="RegisterNewUser(Prabal, Ghosh, Gurap, Kolkata, WB, 712303, 9123456780, 987654321, harry45, prabal@123, public void S...)">
+                  </a> <!-- RegisterNewUser(Prabal, Ghosh, Gurap, Kolkata, WB, 712303, 9123456780, 987654321, harry45, prabal@123, public void S...) -->
+                  <span class="method-name">RegisterNewUser</span>
+                  <span class="parameters">(Prabal,Ghosh,Gurap,Kolkata,WB,712303,9123456780,987654321,harry45,prabal@123,public void Selenium.ParaBankTesting.RegisterNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext) throws java.lang.InterruptedException,org.testng.TestRunner@66273da0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterNewUser(Abhas, Mittal, Shastri Nagar, Meerut, UP, 250004.0, 9.758302001E9, 1.59753462E8, Potter54, abhas@123...)">
+                  </a> <!-- RegisterNewUser(Abhas, Mittal, Shastri Nagar, Meerut, UP, 250004.0, 9.758302001E9, 1.59753462E8, Potter54, abhas@123...) -->
+                  <span class="method-name">RegisterNewUser</span>
+                  <span class="parameters">(Abhas,Mittal,Shastri Nagar,Meerut,UP,250004.0,9.758302001E9,1.59753462E8,Potter54,abhas@123,public void Selenium.ParaBankTesting.RegisterNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext) throws java.lang.InterruptedException,org.testng.TestRunner@66273da0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterNewUser(Sai, Mallavarapu, Kandukur Street, Kandukur, AP, 523105, 9876543210, 123456789, SundarSai08, sai@123...)">
+                  </a> <!-- RegisterNewUser(Sai, Mallavarapu, Kandukur Street, Kandukur, AP, 523105, 9876543210, 123456789, SundarSai08, sai@123...) -->
+                  <span class="method-name">RegisterNewUser</span>
+                  <span class="parameters">(Sai,Mallavarapu,Kandukur Street,Kandukur,AP,523105,9876543210,123456789,SundarSai08,sai@123,public void Selenium.ParaBankTesting.RegisterNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method,org.testng.ITestContext) throws java.lang.InterruptedException,org.testng.TestRunner@66273da0)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,11 +238,14 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;browserName&quot; value=&quot;Chrome&quot;/&gt;
   &lt;parameter name=&quot;url&quot; value=&quot;https://parabank.parasoft.com/&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Selenium.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Smoke Tests&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
         &lt;include name=&quot;smoke&quot;/&gt;
-        &lt;exclude name=&quot;regression&quot;/&gt;
+        &lt;include name=&quot;regression&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -192,6 +274,14 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">RegisterNewUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
@@ -215,20 +305,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'Selenium.ParaBankTesting')
-data.setCell(0, 3, 7909);
+data.setCell(0, 3, 8812);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Login')
+data.setCell(1, 1, 'RegisterNewUser')
 data.setCell(1, 2, 'Selenium.ParaBankTesting')
-data.setCell(1, 3, 6745);
+data.setCell(1, 3, 8443);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'RegisterNewUser')
+data.setCell(2, 2, 'Selenium.ParaBankTesting')
+data.setCell(2, 3, 5933);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'RegisterNewUser')
+data.setCell(3, 2, 'Selenium.ParaBankTesting')
+data.setCell(3, 3, 5823);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Login')
+data.setCell(4, 2, 'Selenium.ParaBankTesting')
+data.setCell(4, 3, 4688);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Login')
+data.setCell(5, 2, 'Selenium.ParaBankTesting')
+data.setCell(5, 3, 4500);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -243,14 +349,12 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">Selenium.ParaBankTesting</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">RegisterNewUser</span>
-                <br/>
                 <span class="ignored-method-name">CustomerCare</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -269,16 +373,36 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Login(Prabal07, Admin123)</span>
-                <span class="method-start">6046 ms</span>
+                <span class="method-name">RegisterNewUser(Sai, Mallavarapu, Kandukur Street, Kandukur, AP, 523105, 9876543210, 123456789, SundarSai08, sai@123...)</span>
+                <span class="method-start">7532 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Login(Abhas1, Admin123)</span>
-                <span class="method-start">13965 ms</span>
+                <span class="method-name">RegisterNewUser(Prabal, Ghosh, Gurap, Kolkata, WB, 712303, 9123456780, 987654321, harry45, prabal@123, public void S...)</span>
+                <span class="method-start">15985 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RegisterNewUser(Abhas, Mittal, Shastri Nagar, Meerut, UP, 250004.0, 9.758302001E9, 1.59753462E8, Potter54, abhas@123...)</span>
+                <span class="method-start">21921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login(SaiSundar10, sai@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,j...)</span>
+                <span class="method-start">27816 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login(Prabal07, Admin@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,ja...)</span>
+                <span class="method-start">32514 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Login(Potter54, abhas@123, public void Selenium.ParaBankTesting.Login(java.lang.String,java.lang.String,ja...)</span>
+                <span class="method-start">37414 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">20722 ms</span>
+                <span class="method-start">46229 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

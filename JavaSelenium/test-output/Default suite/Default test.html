@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/2</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 16 17:57:57 IST 2025</td>
+<td>Started on:</td><td>Mon Aug 18 09:31:11 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (349 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (300 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -79,7 +79,7 @@ function toggleAllBoxes() {
 <td title='Selenium.ParaBankTesting.LaunchBrowser()'><b>LaunchBrowser</b><br>Test class: Selenium.ParaBankTesting</td>
 <td><div><pre>org.testng.TestNGException: 
 Parameter &apos;browserName&apos; is required by BeforeClass on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsuite.xml
+in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--1389741796\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:264)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
@@ -103,10 +103,10 @@ in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsui
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1345900725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1345900725'><pre>org.testng.TestNGException: 
+</pre></div><a href='#' onClick='toggleBox("stack-trace839998248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace839998248'><pre>org.testng.TestNGException: 
 Parameter &apos;browserName&apos; is required by BeforeClass on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsuite.xml
+in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--1389741796\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:264)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
@@ -131,8 +131,8 @@ in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsui
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>-1755347277</td>
-<td>Selenium.ParaBankTesting@33bc72d1</td></tr>
+<td>-1755489671</td>
+<td>Selenium.ParaBankTesting@1a75e76a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -144,17 +144,15 @@ in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsui
 </tr>
 <tr>
 <td title='Selenium.ParaBankTesting.RegisterNewUser()'><b>RegisterNewUser</b><br>Test class: Selenium.ParaBankTesting</td>
-<td><div><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [RegisterNewUser] with [class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:699)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949)
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void Selenium.ParaBankTesting.RegisterNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: RegisterNewUser([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7, java.lang.String arg8, java.lang.String arg9])
+Arguments: [(java.lang.String) Sai,(java.lang.String) Mallavarapu,(java.lang.String) Kandukur Street,(java.lang.String) Kandukur,(java.lang.String) AP,(java.lang.String) 523105,(java.lang.String) 9876543210,(java.lang.String) 123456789,(java.lang.String) saiuser12,(java.lang.String) sai@123,(java.lang.String) sai@123]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -174,18 +172,16 @@ For more information on native dependency injection please refer to https://test
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1309335839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1309335839'><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [RegisterNewUser] with [class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:699)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:885)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949)
+</pre></div><a href='#' onClick='toggleBox("stack-trace153646652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace153646652'><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void Selenium.ParaBankTesting.RegisterNewUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: RegisterNewUser([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7, java.lang.String arg8, java.lang.String arg9])
+Arguments: [(java.lang.String) Sai,(java.lang.String) Mallavarapu,(java.lang.String) Kandukur Street,(java.lang.String) Kandukur,(java.lang.String) AP,(java.lang.String) 523105,(java.lang.String) 9876543210,(java.lang.String) 123456789,(java.lang.String) saiuser12,(java.lang.String) sai@123,(java.lang.String) sai@123]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
@@ -207,7 +203,7 @@ For more information on native dependency injection please refer to https://test
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Selenium.ParaBankTesting@33bc72d1</td></tr>
+<td>Selenium.ParaBankTesting@1a75e76a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -221,7 +217,7 @@ For more information on native dependency injection please refer to https://test
 <td title='Selenium.ParaBankTesting.Login()'><b>Login</b><br>Test class: Selenium.ParaBankTesting<br>Parameters: Abhas1, Admin123</td>
 <td><div><pre>org.testng.TestNGException: 
 Parameter &apos;browserName&apos; is required by BeforeClass on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsuite.xml
+in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--1389741796\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:264)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
@@ -245,10 +241,10 @@ in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsui
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1766911337", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1766911337'><pre>org.testng.TestNGException: 
+</pre></div><a href='#' onClick='toggleBox("stack-trace542980314", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace542980314'><pre>org.testng.TestNGException: 
 Parameter &apos;browserName&apos; is required by BeforeClass on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsuite.xml
+in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--1389741796\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:264)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
@@ -274,12 +270,12 @@ in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsui
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Selenium.ParaBankTesting@33bc72d1</td></tr>
+<td>Selenium.ParaBankTesting@1a75e76a</td></tr>
 <tr>
 <td title='Selenium.ParaBankTesting.Login()'><b>Login</b><br>Test class: Selenium.ParaBankTesting<br>Parameters: Prabal07, Admin123</td>
 <td><div><pre>org.testng.TestNGException: 
 Parameter &apos;browserName&apos; is required by BeforeClass on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsuite.xml
+in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--1389741796\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:264)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
@@ -306,7 +302,7 @@ in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsui
 </pre></div><a href='#' onClick='toggleBox("stack-trace2074658615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
 <div class='stack-trace' id='stack-trace2074658615'><pre>org.testng.TestNGException: 
 Parameter &apos;browserName&apos; is required by BeforeClass on method LaunchBrowser but has not been marked @Optional or defined
-in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsuite.xml
+in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--1389741796\testng-customsuite.xml
 	at org.testng.internal.Parameters.createParams(Parameters.java:264)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
@@ -332,7 +328,7 @@ in C:\Users\Prabal\AppData\Local\Temp\testng-eclipse--398957629\testng-customsui
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Selenium.ParaBankTesting@33bc72d1</td></tr>
+<td>Selenium.ParaBankTesting@1a75e76a</td></tr>
 </table><p>
 </body>
 </html>
