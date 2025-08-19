@@ -79,7 +79,9 @@ public class TestListener implements ITestListener{
 
 			getScreenshotAs(OutputType.FILE) → Captures the current browser screen and returns it as a 
 			temporary file (File).*/
-        	File dest= new File("screenshot/"+result.getMethod().getMethodName()+".png");/*Creates a destination 
+        	String timestamp = String.valueOf(System.currentTimeMillis());
+        	File dest= new File("screenshot/"+result.getMethod().getMethodName()+"_"+timestamp+".png");
+        	/*Creates a destination 
         	path where the screenshot will be saved permanently.*/
         	/*"screenshots/" → means store inside a folder named screenshots.
 
@@ -92,8 +94,11 @@ public class TestListener implements ITestListener{
         	try {
         		Files.copy(src.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
         		// Attach screenshot to Extent Report
-                test.get().addScreenCaptureFromPath(dest.getAbsolutePath());
-                System.out.println("Screenshot saved: " + dest.getAbsolutePath());
+        		 test.get().fail("Test Failed: " + result.getMethod().getMethodName());
+                 test.get().fail(result.getThrowable()); // log exception details
+                 test.get().addScreenCaptureFromPath(dest.getAbsolutePath());
+
+                 System.out.println("Screenshot saved: " + dest.getAbsolutePath());
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

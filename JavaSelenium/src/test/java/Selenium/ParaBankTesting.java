@@ -2,7 +2,9 @@ package Selenium;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
+import org.apache.logging.log4j.Logger;
 import java.time.Duration;
+import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,6 +17,7 @@ import org.testng.annotations.*;
 
 public class ParaBankTesting {
 	WebDriver driver;
+	Logger log = LogManager.getLogger(ParaBankTesting.class);
 	
 	 // ================== SETUP ==================
 	
@@ -35,6 +38,7 @@ public class ParaBankTesting {
                 throw new IllegalArgumentException("Invalid browser: " + browserName);
         }
         driver.manage().window().maximize();
+        log.info("(****Loggers*****)Navigating to URL: {}", url);
         driver.get(url);
     }
 	
@@ -57,6 +61,8 @@ public class ParaBankTesting {
         System.out.println("-> " + method.getName() + " | Invocation #" + currentInvocation +
                            " | Thread ID: " + Thread.currentThread().getId());*/
         //-----------------------------------------
+		log.info("(****Loggers*****)Starting registration test for user: {}", username);
+		
 		driver.get("https://parabank.parasoft.com/");
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -65,7 +71,7 @@ public class ParaBankTesting {
 //		driver.findElement(By.id("FirstName")).sendKeys("Prabal");//approch no.1, it given instance result
 		wait.until(ExpectedConditions.elementToBeClickable(By.name("customer.firstName"))).sendKeys(firstname);
 		wait.until(ExpectedConditions.elementToBeClickable(By.name("customer.lastName"))).sendKeys(secondname);
-		//approch no.2, and it is a better approch bcz it is giving stability
+		//approch no.2, and it is a better approch bcz it is giving stability//That’s called explicit wait
 		wait.until(ExpectedConditions.elementToBeClickable(By.name("customer.address.street"))).sendKeys(street);
 		wait.until(ExpectedConditions.elementToBeClickable(By.name("customer.address.city"))).sendKeys(city);
 		wait.until(ExpectedConditions.elementToBeClickable(By.name("customer.address.state"))).sendKeys(state);
@@ -107,6 +113,8 @@ public class ParaBankTesting {
                            " | Thread ID: " + Thread.currentThread().getId() +
                            " | Running with user: " + username);*/
         //----------------------------------------
+		log.info("(****Loggers*****)Starting login test with user: {}", username);
+		
         driver.get("https://parabank.parasoft.com/");
         System.out.println("Performing Login with: " + username + " / " + password);
 
@@ -122,9 +130,12 @@ public class ParaBankTesting {
         Assert.assertTrue(isLogoutPresent, "Login failed for user: " + username);
         
         if (isLogoutPresent) {
+        	log.info("Login successful. Logging out user: {}", username);
             driver.findElement(By.xpath("//a[text()='Log Out']")).click();
             Thread.sleep(1000);
-        }
+        } else {
+			log.error("(****Loggers*****)Login failed for user: {}", username);
+		}
     }
 	
 	@Ignore
@@ -148,6 +159,7 @@ public class ParaBankTesting {
 		if (driver != null) {
 			Thread.sleep(10000); // pause for 2 seconds
 			driver.quit();
+			log.info("(****Loggers*****)Browser closed.");
 		}
 	}
 	

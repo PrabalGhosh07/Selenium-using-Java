@@ -16,7 +16,7 @@
     <classes>
       <class name="Selenium.ParaBankTesting">
         <methods>
-          <include name="Login" invocation-numbers="0 1"/>
+          <include name="Login" invocation-numbers="1"/>
           <include name="LaunchBrowser"/>
           <include name="afterClass"/>
         </methods>
